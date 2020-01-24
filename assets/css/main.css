@@ -3646,8 +3646,8 @@ input, select, textarea {
 		padding: 0 2rem 0 0;
 		position: -webkit-sticky; /* Safari */
 		position: sticky; 
-		top: 436px;
-  		width: 1300px;
+		top: 420px;
+		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
 		height:1500px;
