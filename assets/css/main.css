@@ -3283,17 +3283,40 @@ input, select, textarea {
 
 /* Intro */
 
-	#intro {
+	#intro1 {
 		color: #ffffff;
-		padding: 1rem 4rem 6rem 4rem ;
+		padding: 4rem 4rem 4rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-justify-content: -moz-flex-end;
+		-webkit-justify-content: -webkit-flex-end;
+		-ms-justify-content: -ms-flex-end;
+		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+		transition: opacity 1s ease, transform 1s ease;
+		justify-content: flex-end;
+		position: relative;
+		cursor: default;
+		text-align: center;
+		z-index: 1;
+	}
+
+
+
+	#intro {
+		color: #ffffff;
+		padding: 4rem 4rem 4rem 4rem ;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -3310,7 +3333,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+	
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3331,7 +3354,7 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
+		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6,#intro1 h1 {
 			color: #ffffff;
 		}
 
@@ -3390,7 +3413,7 @@ input, select, textarea {
 			line-height: 1;
 		}
 
-		#intro p {
+		#intro p, #intro1 p {
 			font-size: 1.25rem;
 			font-style: italic;
 			margin-top: -0.25rem;
@@ -3407,7 +3430,7 @@ input, select, textarea {
 				-ms-transform: translateY(2rem);
 				transform: translateY(2rem);
 				opacity: 0;
-				visibility: hidden;
+				visibility: visible;
 			}
 
 		#intro.hidden {
@@ -3421,7 +3444,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
 			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			opacity: 0;
-			visibility: hidden;
+			visibility: visible;
 		}
 
 			#intro.hidden + #header .logo {
@@ -3469,7 +3492,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				: 3rem 2rem 1rem 2rem ;
+				padding: 3rem 2rem 1rem 2rem ;
 				min-height: 80vh;
 			}
 
@@ -3623,9 +3646,8 @@ input, select, textarea {
 		padding: 0 2rem 0 0;
 		position: -webkit-sticky; /* Safari */
 		position: sticky; 
-		top: 51rem;
+		top: 436px;
   		width: 1300px;
-	
 		max-width: 72rem;
 		z-index: 2;
 		height:1500px;
